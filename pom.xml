@@ -54,8 +54,12 @@
 			<artifactId>aws-secretsmanager-jdbc</artifactId>
 			<version>1.0.5</version>
 		</dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<plugins>
