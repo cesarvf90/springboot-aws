@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.training</groupId>
 	<artifactId>springboot-data</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>springboot-data</name>
 	<description>Demo project for Spring Boot, MS SQL, EC2, Secrets Manager, Spring Data</description>
 	<properties>
@@ -34,16 +34,6 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<version>11.2.0.jre17</version>
-		</dependency>
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk</artifactId>
-			<version>1.12.411</version>
-		</dependency>
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk-secretsmanager</artifactId>
-			<version>1.12.411</version>
 		</dependency>
 		<dependency>
 			<groupId>jakarta.annotation</groupId>
