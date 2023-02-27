@@ -34,7 +34,7 @@ public class PersonService {
         List<Person> persons = personRepository.findByFirstName(firstName);
 
         if (persons == null || persons.isEmpty()) {
-            throw new EntityNotFoundException("No persons found with first name: " + firstName);
+            throw new EntityNotFoundException("No persons found by first name: " + firstName);
         }
 
         return persons;
@@ -43,7 +43,7 @@ public class PersonService {
         List<Person> persons = personRepository.findByLastName(lastName);
 
         if (persons == null || persons.isEmpty()) {
-            throw new EntityNotFoundException("No persons found with last name: " + lastName);
+            throw new EntityNotFoundException("No persons found by last name: " + lastName);
         }
 
         return persons;
@@ -53,7 +53,7 @@ public class PersonService {
         List<Person> persons = personRepository.findByCity(city);
 
         if (persons == null || persons.isEmpty()) {
-            throw new EntityNotFoundException("No persons found with city: " + city);
+            throw new EntityNotFoundException("No persons found by city: " + city);
         }
 
         return persons;
@@ -63,7 +63,7 @@ public class PersonService {
         List<Person> persons = personRepository.findByAge(age);
 
         if (persons == null || persons.isEmpty()) {
-            throw new EntityNotFoundException("No persons found with age: " + age);
+            throw new EntityNotFoundException("No persons found by age: " + age);
         }
 
         return persons;
