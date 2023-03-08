@@ -1,6 +1,6 @@
 package com.training.springbootdata.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 

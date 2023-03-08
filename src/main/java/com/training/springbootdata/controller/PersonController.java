@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import com.training.springbootdata.model.Person;
 import com.training.springbootdata.service.PersonService;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,11 +21,13 @@ public class PersonController {
         this.personService = personService;
     }
 
+    @ApiOperation(value = "Get all the persons", notes = "Returns all the persons")
     @GetMapping("")
     public List<Person> getPersons() {
         return personService.findAllPersons();
     }
 
+    @ApiOperation(value = "Get a person by id", notes = "Returns a person by their unique identifier")
     @GetMapping("/{id}")
     public ResponseEntity<Person> getPersonById(@PathVariable Long id) {
         Optional<Person> elementOptional = personService.findById(id);
@@ -36,6 +39,7 @@ public class PersonController {
         }
     }
 
+    @ApiOperation(value = "Search a person by parameters", notes = "Returns a list of persons who meet the search criteria")
     @GetMapping("/search")
     public ResponseEntity<List<Person>> searchPersonsByParameters(
             @RequestParam(name = "firstname", required = false) String firstName,
@@ -61,6 +65,7 @@ public class PersonController {
         }
     }
 
+    @ApiOperation(value = "Create a person", notes = "Create a person in the system")
     @PostMapping("")
     public Person createPerson(@RequestBody Person person) {
         return personService.createPerson(person);

@@ -2,7 +2,7 @@ package com.training.springbootdata.service;
 
 import com.training.springbootdata.model.Person;
 import com.training.springbootdata.repository.PersonRepository;
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
