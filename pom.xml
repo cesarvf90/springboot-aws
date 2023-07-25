@@ -12,7 +12,7 @@
 	<artifactId>springboot-data</artifactId>
 	<version>1.0.0</version>
 	<name>springboot-data</name>
-	<description>Demo project for Spring Boot, MS SQL, EC2, Secrets Manager, Spring Data</description>
+	<description>Demo project for Spring Boot, MS SQL, EC2, Parameter Store, Spring Data</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -38,11 +38,6 @@
 		<dependency>
 			<groupId>jakarta.annotation</groupId>
 			<artifactId>jakarta.annotation-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.amazonaws.secretsmanager</groupId>
-			<artifactId>aws-secretsmanager-jdbc</artifactId>
-			<version>1.0.5</version>
 		</dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
